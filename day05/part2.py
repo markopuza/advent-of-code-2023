@@ -64,7 +64,7 @@ def main():
     garden = library.read_input(5)
     seed_ranges, maps = parse_garden(garden)
     location_ranges = seed_range_to_location_ranges(seed_ranges, maps)
-    print(min(a for a, _ in location_ranges if a))
+    print(min(a for a, _ in location_ranges))
 
 if __name__ == "__main__":
     main()
