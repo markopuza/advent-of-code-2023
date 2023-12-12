@@ -15,8 +15,6 @@ def count_arrangements(row, groups):
         return 1
     if len(row) < sum(groups) + len(groups) - 1:
         return 0
-    if row and not groups:
-        return int(all(x in '.?' for x in row))
     
     result = 0
     # try to do nothing
